@@ -75,30 +75,107 @@
   flex-wrap: wrap;
   margin: -30px;
   .service-item {
-    padding: 40px;
-    outline: 3px solid lawngreen;
     width: 255px;
     height: 255px;
-    box-sizing: border-box;
     margin: 30px;
-  }
-}
-.services-link {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 19px;
-  line-height: 1.3;
-  font-weight: 400;
-  &:hover,
-  &:focus {
-    color: $white-color;
-    background-color: $accent-color;
   }
 }
 .services-icon {
   width: 70px;
   height: 70px;
   margin-bottom: 53px;
-  fill: currentColor;
+  fill: $accent-color;
+}
+.services-link {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: $main-text-color;
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    .services-icon {
+      fill: $white-color;
+    }
+  }
+}
+
+//==Advantages==
+.advantages {
+  transform: translate(100px);
+  background-color: $section-fon;
+  .container {
+    transform: translate(-100px);
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 470px;
+  &:nth-child(odd) {
+    margin: 60px;
+  }
+  .advantages-item {
+    width: 175px;
+    box-sizing: border-box;
+    &:nth-last-child(n + 3) {
+      margin-bottom: 71px;
+    }
+  }
+}
+.advanteges-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+
+  margin-top: 20px;
+}
+.item-accent {
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 1;
+  color: $accent-color;
+
+  &::after {
+    margin-top: 17px;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 70px;
+    background: $preview-text-color;
+  }
+}
+
+//==Projects==
+.projects {
+  .container {
+    padding: 120px 0;
+    display: block;
+  }
+}
+.projects-img {
+  width: 570px;
+  height: 635px;
+  .projects-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .projects-description {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    color: $preview-text-color;
+  }
 }

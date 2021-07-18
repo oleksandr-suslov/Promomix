@@ -159,21 +159,29 @@ header .container {
 }
 
 .services-list .service-item {
-  padding: 40px;
-  outline: 3px solid lawngreen;
   width: 255px;
   height: 255px;
-  box-sizing: border-box;
   margin: 30px;
 }
 
+.services-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 53px;
+  fill: #f2353f;
+}
+
 .services-link {
-  box-sizing: border-box;
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
   font-size: 19px;
   line-height: 1.3;
   font-weight: 400;
+  color: #1f2c37;
 }
 
 .services-link:hover, .services-link:focus {
@@ -181,10 +189,85 @@ header .container {
   background-color: #f2353f;
 }
 
-.services-icon {
+.services-link:hover .services-icon, .services-link:focus .services-icon {
+  fill: white;
+}
+
+.advantages {
+  transform: translate(100px);
+  background-color: #f2f4f7;
+}
+
+.advantages .container {
+  transform: translate(-100px);
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 470px;
+}
+
+.advantages-list:nth-child(odd) {
+  margin: 60px;
+}
+
+.advantages-list .advantages-item {
+  width: 175px;
+  box-sizing: border-box;
+}
+
+.advantages-list .advantages-item:nth-last-child(n + 3) {
+  margin-bottom: 71px;
+}
+
+.advanteges-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+
+.item-accent {
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 1;
+  color: #f2353f;
+}
+
+.item-accent::after {
+  margin-top: 17px;
+  content: "";
+  display: block;
+  height: 2px;
   width: 70px;
-  height: 70px;
-  margin-bottom: 53px;
-  fill: currentColor;
+  background: #b0b6bf;
+}
+
+.projects .container {
+  padding: 120px 0;
+  display: block;
+}
+
+.projects-img {
+  width: 570px;
+  height: 635px;
+}
+
+.projects-img .projects-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.projects-img .projects-description {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+  color: #b0b6bf;
 }
 /*# sourceMappingURL=main.css.map */
