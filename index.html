@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     
 <!-- ADD FONTS-->
 
@@ -17,17 +20,25 @@
     <header>
         <div class="container">
             <a href="./index.html" class="logo"> 
-            <svg>
-                <use>
-
-                </use>
+            <svg class="menu-icon" width="164px" height="20px">
+                <use href="./images/sprite.svg#icon-Group-248"></use>
             </svg>
             </a>
             <nav>
-                <ul>
-                    <li>Поиск</li>
-                    <li>8 496 429 09 00</li>
-                    <li>оставить заявку</li>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                        <svg class="menu-icon" width="16px" height="16px">
+                            <use href="./images/sprite.svg#icon-search"></use>
+                        </svg>
+                            Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="tel:+84964290900" class="nav-link">8 496 429 09 00</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">оставить заявку</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -35,73 +46,101 @@
     <main>
         <!--HERO-->
         <section class="hero">
+            <!-- <picture class="">
+                <source srcset="./images/hero.jpg 1x, ./images/ahero@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+            
+                <img src="./images/hero.jpg" alt="Фото производства печати">
+            </picture> -->
+
             <div class="container">
-                <h1 class="hero-title">Promomix – рекламное агентство полного цикла</h1>
-                <ul>
-                    <li><a href="#" class="soc-link">Facebook</a></li>
-                    <li><a href="#" class="soc-link">Vkontakte</a></li>
-                    <li><a href="#" class="soc-link">Instagram</a></li>
+                <h1 class="hero-title"><span class="accent-text">Promomix –</span><br>рекламное агентство<br>полного цикла</h1>
+                <ul class="soc-list">
+                    <li class="soc-item"><a href="#" class="soc-link">Facebook</a></li>
+                    <li class="soc-item"><a href="#" class="soc-link">Vkontakte</a></li>
+                    <li class="soc-item"><a href="#" class="soc-link">Instagram</a></li>
                 </ul>
+                <a href="#" class="hero-move">
+                <svg class="menu-icon" width="80px" height="80px">
+                    <use href="./images/sprite.svg#icon-Group-284"></use>
+                </svg> 
+                </a>
             </div>
         </section>
+        <!--Service-->
         <section class="services">
             <div class="container">
-                <h1 class="services-title"></h1>
+                <span class="section-description">услуги</span>
+                <h1 class="services-title">Ключевые <span class="accent-text">направления</span></h1>
                 <ul class="services-list">
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bxl-codepensvg"></use>
                             </svg>
+                            <span class="description-item">Наружная
+                            реклама</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-printersvg"></use>
                             </svg>
+                            <span class="description-item">Широкоформатная
+                            печать</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-copy-altsvg"></use>
                             </svg>
+                            <span class="description-item">Рекламная полиграфия</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-beersvg"></use>
                             </svg>
+                            <span class="description-item">Сувенирная
+                            продукция</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-chalkboardsvg"></use>
                             </svg>
+                            <span class="description-item">Внутренняя
+                            реклама</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bxs-t-shirtsvg"></use>
                             </svg>
+                            <span class="description-item">Брендирование
+                            одежды</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-bussvg"></use>
                             </svg>
+                            <span class="description-item">Брендирование
+                            транспорта</span>
                         </a>
                     </li>
                     <li class="service-item">
                         <a href="#" class="services-link">
                             <svg class="services-icon">
-                                <use></use>
+                                <use href="./images/sprite.svg#icon-bx-arrow-backsvg"></use>
                             </svg>
+                            <span class="description-item">Все услуги</span>
                         </a>
                     </li>
                 </ul>
