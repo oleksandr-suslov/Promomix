@@ -253,21 +253,83 @@ header .container {
   display: block;
 }
 
-.projects-img {
+.projects-link {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
   width: 570px;
-  height: 635px;
 }
 
-.projects-img .projects-title {
+.projects-link:nth-child(odd) {
+  margin-right: 60px;
+}
+
+.projects-link:hover .projects-title, .projects-link:focus .projects-title {
+  color: #f2353f;
+}
+
+.projects-link .projects-img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.projects-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
+  margin-bottom: 15px;
 }
 
-.projects-img .projects-description {
+.projects-description {
   font-weight: 400;
   font-size: 11px;
   line-height: 1;
   color: #b0b6bf;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.more-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  text-align: end;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  align-items: center;
+}
+
+.more-links:hover, .more-links:focus {
+  color: #f2353f;
+}
+
+.more-links-description {
+  font-size: 30px;
+}
+
+.more-links-descriptions {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.more-links-descriptions::before {
+  content: "";
+  display: inline-block;
+  margin-right: 50px;
+  text-align: center;
+  height: 1px;
+  width: 1000px;
+  background-color: #1f2c37;
+}
+
+.more-links-descriptions:hover::before,
+.more-links-descriptions:focus::before {
+  background-color: #f2353f;
 }
 /*# sourceMappingURL=main.css.map */
