@@ -109,7 +109,7 @@ header .container {
   line-height: 1.2;
 }
 
-.hero .soc-list {
+.soc-list {
   display: flex;
 }
 
@@ -441,12 +441,12 @@ header .container {
   margin-right: 10px;
 }
 
-.footer {
+.footer-nav {
   transform: translate(100px);
   background-color: #f2f4f7;
 }
 
-.footer .container {
+.footer-nav .container {
   transform: translate(-100px);
   padding: 100px 0;
   display: flex;
@@ -509,5 +509,18 @@ header .container {
   height: 35px;
   border: none;
   border-bottom: 1px solid #1f2c37;
+}
+
+.footer-soc .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px 0;
+}
+
+.footer-soc-link {
+  color: #1f2c37;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
 }
 /*# sourceMappingURL=main.css.map */

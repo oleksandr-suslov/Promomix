@@ -1,4 +1,4 @@
-.footer {
+.footer-nav {
   transform: translate(100px);
   background-color: $section-fon;
   .container {
@@ -57,4 +57,17 @@
   height: 35px;
   border: none;
   border-bottom: 1px solid $main-text-color;
+}
+.footer-soc {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0;
+  }
+}
+.footer-soc-link {
+  color: $main-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
 }
